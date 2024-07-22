@@ -2,6 +2,8 @@
 
 Reference: https://developer.aliyun.com/article/932995  
 
+![](screenshot.jpg)
+
 ## Command line history
 
 ```bash
