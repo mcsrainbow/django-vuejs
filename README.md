@@ -34,7 +34,7 @@ python manage.py migrate
 
 sqlite3 -cmd ".mode column" -cmd ".headers on" db.sqlite3
 SELECT name FROM sqlite_master WHERE type='table';
-PRAGMA table_info(table_name);
+PRAGMA table_info(api_book);
 SELECT * FROM api_book;
 .quit
 ```
@@ -70,6 +70,7 @@ vim config/index.js
 npm run dev
 
 npm run build
+cd ..
 vim django_vuejs/urls.py
 vim django_vuejs/settings.py
 python manage.py runserver 0.0.0.0:9080
